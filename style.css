@@ -140,7 +140,7 @@
   .container {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 82vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +153,7 @@
   }
   .slider {
     position: absolute;
-    inset: 40px 40px 40px 40px;
+    inset: 20px 20px 20px 20px;
   }
 
   .slider .slides {
