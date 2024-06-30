@@ -121,7 +121,7 @@
   position: relative;
   padding: 40px;
   max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.65);
+
   transition: 0.25s;
   transition-delay: 0s;
   transform: translateY(40px);
@@ -137,19 +137,18 @@
 }
 
 @media (max-width: 900px) {
-  /*.container {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }*/
+  .container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .content h2 {
     font-size: 2em;
   }
-  .content p{
+  .content p {
     font-weight: normal;
   }
   .slider {
