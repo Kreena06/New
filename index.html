@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Sliderdiv</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <div class="slides" style="--img: url('img1.jpg')">
+          <div class="content">
+            <h2>Hey Yodhaji!</h2>
+            <p>Whenever my phone vibrates, I hope you're the reason for it.</p>
+          </div>
+        </div>
+        <div class="slides" style="--img: url('img2.jpg')">
+          <div class="content">
+            <h2>Remember</h2>
+            <p>Nobody is perfect, but you're perfectly perfect!</p>
+          </div>
+        </div>
+        <div class="slides" style="--img: url('img3.jpg')">
+          <div class="content">
+            <h2>You know</h2>
+            <p>
+              You are always on my mind when I woke up in the morning. Funny how
+              I just can't stop thinking about you. Six months ago we hadn't
+              even met, and now you are the one I think of 24/7. So, I just
+              wanted to say I can't wait to see you.
+            </p>
+          </div>
+        </div>
+        <div class="slides" style="--img: url('img4.jpg')">
+          <div class="content">
+            <h2>Buzurgji</h2>
+            <p>
+              Thanks to you, I smile a little more, laugh a little harder, and
+              cry a little less. I don't konw what will happan to us but for now
+              you are the reason I smile a little more!
+            </p>
+          </div>
+        </div>
+        <div class="slides" style="--img: url('img5.jpg')">
+          <div class="content">
+            <h2>Ok bye!</h2>
+            <p>Aapni Kreeni ko yaad rakhna :)</p>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <span class="prev"></span>
+        <span class="next"> </span>
+      </div>
+    </div>
+    <script>
+      let next = document.querySelector(".next");
+      let prev = document.querySelector(".prev");
+      let slider = document.querySelector(".slider");
+
+      next.addEventListener("click", function () {
+        let slides = document.querySelectorAll(".slides");
+        slider.appendChild(slides[0]);
+      });
+
+      prev.addEventListener("click", function () {
+        let slides = document.querySelectorAll(".slides");
+        slider.prepend(slides[slides.length - 1]);
+      });
+    </script>
+  </body>
+</html>
