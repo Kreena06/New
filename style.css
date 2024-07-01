@@ -35,7 +35,7 @@
   background-position: center;
   transition: 0.5s;
   border-radius: 10px;
-  box-shadow: 0 25px 50px rgb(, 0, 0, 0.5);
+  box-shadow: 0 25px 50px rgb(0, 0, 0, 0.5);
   display: flex;
   justify-self: flex-start;
   align-items: flex-end;
