@@ -35,7 +35,7 @@
   background-position: center;
   transition: 0.5s;
   border-radius: 10px;
-  box-shadow: 0 25px 50px rgb(0, 0, 0, 0.5);
+  box-shadow: 0 25px 50px rgb(, 0, 0, 0.5);
   display: flex;
   justify-self: flex-start;
   align-items: flex-end;
@@ -125,7 +125,6 @@
   /*margin: auto 40px;*/
   max-width: 400px;
   max-height: fit-content;
-  background-color: rgba(0, 0, 0);
   transition: 0.25s;
   transition-delay: 0s;
   transform: translateY(40px);
