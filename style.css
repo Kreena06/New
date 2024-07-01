@@ -125,7 +125,7 @@
   /*margin: auto 40px;*/
   max-width: 400px;
   max-height: fit-content;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0);
   transition: 0.25s;
   transition-delay: 0s;
   transform: translateY(40px);
