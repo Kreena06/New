@@ -19,7 +19,7 @@
 
 .slider {
   position: absolute;
-  inset: 40px 100px 40px 40px;
+  inset: 0px 0px 0px 0px;
   background-color: rgb(176, 176, 176);
   border-radius: 20px;
 }
@@ -106,7 +106,7 @@
 }
 
 .content h2 {
-  font-size: 4em;
+  font-size: 3em;
   color: white;
 }
 
@@ -118,10 +118,14 @@
 }
 
 .content {
+  /*bottom: 28%;*/
+
   position: relative;
   padding: 40px;
-  max-width: 600px;
-
+  /*margin: auto 40px;*/
+  max-width: 400px;
+  max-height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
   transition: 0.25s;
   transition-delay: 0s;
   transform: translateY(40px);
@@ -137,23 +141,16 @@
 }
 
 @media (max-width: 900px) {
-  .container {
-    position: absolute;
-    width: 100vw;
-    height: 82vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .content h2 {
+
+  .content h2{
     font-size: 2em;
   }
-  .content p {
-    font-weight: normal;
+  .container{
+    overflow: hidden;
   }
   .slider {
     position: absolute;
-    inset: 20px 20px 20px 20px;
+    inset: 40px 40px 40px 40px;
   }
 
   .slider .slides {
@@ -161,7 +158,7 @@
     height: 100px;
     top: initial;
     bottom: -170px;
-    box-shadow: 0 10px 20px rgb(0, 0, 0, 0);
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
   }
 
   .slider .slides:nth-child(1),
